@@ -4,6 +4,7 @@ import { cookies } from 'next/headers';
 import './globals.css';
 import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
+import WhatsAppButton from '@/components/shared/WhatsAppButton';
 
 const outfit = Outfit({
   subsets: ['latin'],
@@ -166,6 +167,7 @@ export default async function RootLayout({
         <Navbar lang={lang} />
         <main className="flex-grow dark:bg-slate-950">{children}</main>
         <Footer lang={lang} />
+        <WhatsAppButton lang={lang} />
       </body>
     </html>
   );
