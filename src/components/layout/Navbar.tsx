@@ -70,7 +70,7 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
       <header
         className={`fixed top-0 left-0 right-0 z-50 transition-all duration-350 ${
           isScrolled
-            ? 'glass-navbar dark:bg-slate-950/80 dark:border-slate-900 py-3 shadow-soft'
+            ? 'bg-white dark:bg-slate-950 border-b border-slate-200 dark:border-slate-900 py-3 shadow-soft'
             : 'bg-white/40 dark:bg-transparent backdrop-blur-xs py-5 border-b border-transparent'
         }`}
       >
