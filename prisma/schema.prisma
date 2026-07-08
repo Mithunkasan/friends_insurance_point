@@ -1,0 +1,114 @@
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+model Enquiry {
+  id             String   @id @default(uuid())
+  name           String
+  phone          String
+  vehicleNumber  String?
+  insuranceType  String
+  message        String?
+  createdAt      DateTime @default(now())
+}
+
+model QuoteRequest {
+  id                   String   @id @default(uuid())
+  name                 String
+  phone                String
+  email                String?
+  vehicleType          String   // Bike, Car, Bus, Auto, Heavy Vehicle
+  vehicleMake          String?
+  vehicleModel         String?
+  registrationYear     Int?
+  insuranceType        String
+  previousPolicyExpiry String?
+  message              String?
+  status               String   @default("PENDING") // PENDING, CONTACTED, RESOLVED
+  createdAt            DateTime @default(now())
+}
+
+model InsuranceService {
+  id          String   @id @default(uuid())
+  name        String   @unique
+  slug        String   @unique
+  description String
+  icon        String   // Lucide icon name
+  benefits    String[] // Array of bullet-point benefits
+  category    String   // MOTOR, LIFE, HEALTH, FIRE, COMMERCIAL
+  active      Boolean  @default(true)
+  createdAt   DateTime @default(now())
+}
+
+model Testimonial {
+  id        String   @id @default(uuid())
+  name      String
+  role      String   @default("Customer")
+  review    String
+  rating    Int      @default(5)
+  image     String?  // Avatar or placeholder
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model FAQ {
+  id        String   @id @default(uuid())
+  question  String
+  answer    String
+  category  String   @default("General")
+  active    Boolean  @default(true)
+  createdAt DateTime @default(now())
+}
+
+model Admin {
+  id           String   @id @default(uuid())
+  username     String   @unique
+  passwordHash String
+  role         String   @default("ADMIN")
+  createdAt    DateTime @default(now())
+}
+
+model SEOData {
+  id            String   @id @default(uuid())
+  pagePath      String   @unique // e.g. "/", "/about", "/contact"
+  title         String
+  description   String
+  keywords      String?
+  ogTitle       String?
+  ogDescription String?
+  ogImage       String?
+  createdAt     DateTime @default(now())
+}
+
+model Banner {
+  id          String   @id @default(uuid())
+  title       String
+  subtitle    String?
+  imageUrl    String?
+  link        String?
+  active      Boolean  @default(true)
+  orderIndex  Int      @default(0)
+  createdAt   DateTime @default(now())
+}
+
+model InsurancePartner {
+  id        String   @id @default(uuid())
+  name      String   @unique
+  logoUrl   String?
+  active    Boolean  @default(true)
+  orderIndex Int     @default(0)
+  createdAt DateTime @default(now())
+}
+
+model Setting {
+  id        String   @id @default(uuid())
+  key       String   @unique
+  value     String
+  group     String   @default("GENERAL")
+  createdAt DateTime @default(now())
+}
