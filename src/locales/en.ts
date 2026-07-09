@@ -4,6 +4,7 @@ export const en = {
     callNow: "Call Now",
     getQuote: "Get Free Quote",
     applyNow: "Apply & Get Policy",
+    viewDetails: "View Details",
     submit: "Submit",
     loading: "Loading...",
     backToHome: "Back to Home",
@@ -18,23 +19,23 @@ export const en = {
     getQuote: "Get Free Quote",
   },
   hero: {
-    badge: "Get Your Insurance in Just 10 Minutes",
+    badge: "YOUR TRUSTED INSURANCE PARTNER",
     title: "Friends",
     titlePoint: "Insurance Point",
     subtitle: "Get Your Vehicle Insurance in Just 10 Minutes.",
-    description: "Compare insurance plans from India's leading insurance companies and receive the best premium at competitive prices with expert assistance.",
+    description: "Compare insurance plans from India's leading insurance companies and get the best premium at competitive prices with expert assistance.",
     bullets: {
-      instant: "Instant Policy copy",
-      compare: "Best Premium Comparison",
+      instant: "10 Minutes Policy Issuance",
+      compare: "Best Premium Guaranteed",
       advisors: "Trusted Advisors",
-      claim: "Quick Claim Help"
+      claim: "24/7 Customer Support"
     },
   },
   stats: {
     happyCustomers: "Happy Customers",
-    policyIssuance: "Policy Issuance",
-    partners: "Insurance Partners",
-    support: "Customer Support"
+    policyIssuance: "Minutes\nPolicy Issuance",
+    partners: "Insurance\nPartners",
+    support: "Customer\nSatisfaction"
   },
   homeServices: {
     tag: "Our Offerings",
