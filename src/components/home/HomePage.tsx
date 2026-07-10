@@ -185,7 +185,7 @@ export default async function Home() {
       <Hero lang={lang} />
       <StatsCounter lang={lang} />
       <ServicesSection services={translatedServices} t={t} />
-      <WhyChooseUsSection t={t} />
+      <WhyChooseUsSection t={t} lang={lang} />
       <PartnersSection partners={partners} t={t} />
       <ProcessSection t={t} />
       <TestimonialsSection lang={lang} testimonials={testimonials} t={t} />
