@@ -19,16 +19,19 @@ interface TestimonialsSectionProps {
 }
 
 export default function TestimonialsSection({ lang, testimonials, t }: TestimonialsSectionProps) {
+  const isTa = lang === 'ta';
+  const sectionTag = isTa ? 'எங்கள் வாடிக்கையாளர்கள் கூறுவது' : 'WHAT OUR CUSTOMERS SAY';
+  const sectionTitle = isTa ? '1000+ மகிழ்ச்சியான வாடிக்கையாளர்களால் நம்பப்படுகிறது' : 'Trusted By 1000+ Happy Customers';
+
   return (
-    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
-      <AnimatedReveal className="text-center space-y-4 mb-12">
-        <h2 className="text-xs uppercase font-extrabold tracking-widest text-primary-blue dark:text-primary-blue-light">
-          {t.testimonials.tag}
+    <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 transition-colors duration-300">
+      <AnimatedReveal className="text-center space-y-2 mb-12">
+        <span className="text-xs uppercase font-extrabold tracking-widest text-emerald-600 dark:text-emerald-400 block mb-1">
+          {sectionTag}
+        </span>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-extrabold text-slate-900 dark:text-white tracking-tight leading-tight">
+          {sectionTitle}
         </h2>
-        <p className="text-3xl font-extrabold text-slate-900 dark:text-white tracking-tight">{t.testimonials.title}</p>
-        <p className="text-sm text-slate-500 dark:text-slate-400 font-bold max-w-xl mx-auto">
-          {t.testimonials.description}
-        </p>
       </AnimatedReveal>
 
       <TestimonialCarousel testimonials={testimonials} lang={lang} />
