@@ -4,7 +4,7 @@ import { cookies } from 'next/headers';
 import QuoteForm from '@/components/shared/QuoteForm';
 import AnimatedReveal from '@/components/shared/AnimatedReveal';
 import { getTranslation } from '@/locales/translate';
-import HandshakeLoader from '@/components/shared/HandshakeLoader';
+import LogoLoader from '@/components/shared/LogoLoader';
 
 export const metadata: Metadata = {
   title: 'Request a Quote | Friends Insurance Point',
@@ -59,7 +59,7 @@ export default async function QuotePage() {
 
         {/* Right Side: Interactive Form */}
         <div className="lg:col-span-8 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800/60 rounded-3xl p-8 sm:p-12 shadow-soft glass-card">
-          <Suspense fallback={<HandshakeLoader lang={lang} />}>
+          <Suspense fallback={<LogoLoader lang={lang} />}>
             <QuoteForm lang={lang} />
           </Suspense>
         </div>

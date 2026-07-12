@@ -34,11 +34,11 @@ export default function BottomCtaSection({ t }: BottomCtaSectionProps) {
             {t.common.getQuote}
           </Link>
           <a
-            href="tel:7373723019"
+            href="tel:7598657990"
             className="flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-primary-green hover:bg-primary-green-hover text-white text-sm font-bold rounded-xl transition-all shadow-md"
           >
             <Phone className="w-4.5 h-4.5 mr-2" />
-            {t.common.callNow} (7373723019)
+            {t.common.callNow} (7598657990)
           </a>
         </div>
       </AnimatedReveal>

@@ -42,15 +42,15 @@ export default async function ThankYouPage() {
           <p>{t.thankYou.urgentTitle}</p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-3 mt-3">
             <a
-              href="tel:7373723019"
+              href="tel:7598657990"
               className="flex items-center text-primary-blue dark:text-primary-blue-light hover:text-primary-blue-hover"
             >
               <Phone className="w-4 h-4 mr-1.5 text-primary-green" />
-              Call 7373723019
+              Call 7598657990
             </a>
             <span className="hidden sm:inline text-slate-300 dark:text-slate-800">|</span>
             <a
-              href="https://wa.me/917373723019"
+              href="https://wa.me/917598657990"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center text-green-600 hover:text-green-700"

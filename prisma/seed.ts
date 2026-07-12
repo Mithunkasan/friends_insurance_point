@@ -27,10 +27,10 @@ async function main() {
   const settings = [
     { key: 'company_name', value: 'Friends Insurance Point', group: 'GENERAL' },
     { key: 'tagline', value: 'Your Trusted Insurance Partner – Get Your Insurance in Just 10 Minutes.', group: 'GENERAL' },
-    { key: 'phone', value: '7373723019', group: 'CONTACT' },
+    { key: 'phone', value: '7598657990', group: 'CONTACT' },
     { key: 'email', value: 'info@friendsinsurancepoint.com', group: 'CONTACT' },
     { key: 'address', value: '72/132, Arattu Road, Krishnancoil, Vadasery, Nagercoil – 629001, Tamil Nadu, India.', group: 'CONTACT' },
-    { key: 'whatsapp_number', value: '917373723019', group: 'CONTACT' },
+    { key: 'whatsapp_number', value: '917598657990', group: 'CONTACT' },
     { key: 'business_hours', value: 'Monday - Saturday: 9:00 AM - 8:30 PM, Sunday: Closed', group: 'GENERAL' },
   ];
 
@@ -283,7 +283,7 @@ async function main() {
     },
     {
       question: 'How do I file an insurance claim in the event of an accident?',
-      answer: 'In the event of an accident, do not panic. 1) Take pictures of the damage. 2) Contact Friends Insurance Point immediately at 7373723019. 3) We will help you locate the nearest cashless garage and coordinate with the insurer\'s surveyor for a quick claim assessment.',
+      answer: 'In the event of an accident, do not panic. 1) Take pictures of the damage. 2) Contact Friends Insurance Point immediately at 7598657990. 3) We will help you locate the nearest cashless garage and coordinate with the insurer\'s surveyor for a quick claim assessment.',
       category: 'Claims'
     },
     {
@@ -328,7 +328,7 @@ async function main() {
     },
     {
       question: 'Do you offer door-step or remote digital service for policy issuance?',
-      answer: 'Yes! You do not need to visit our Nagercoil office in person. You can simply WhatsApp us the vehicle details/documents to 7373723019. We will send you premium comparisons, collect payment online, and email/WhatsApp your policy PDF instantly within 10 minutes.',
+      answer: 'Yes! You do not need to visit our Nagercoil office in person. You can simply WhatsApp us the vehicle details/documents to 7598657990. We will send you premium comparisons, collect payment online, and email/WhatsApp your policy PDF instantly within 10 minutes.',
       category: 'General'
     }
   ];
@@ -408,7 +408,7 @@ async function main() {
     {
       pagePath: '/contact',
       title: 'Contact Friends Insurance Point | Nagercoil Office Details & Enquiry Form',
-      description: 'Visit our office at Arattu Road, Vadasery, Nagercoil. Call us at 7373723019 or WhatsApp us to get your vehicle policy issued in 10 minutes.',
+      description: 'Visit our office at Arattu Road, Vadasery, Nagercoil. Call us at 7598657990 or WhatsApp us to get your vehicle policy issued in 10 minutes.',
       keywords: 'Insurance Agency Address Nagercoil, Friends Insurance Phone, Get Policy in 10 minutes Vadasery'
     },
     {

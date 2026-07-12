@@ -175,7 +175,7 @@ export default async function ServiceDetailPage({ params }: PageProps) {
             {t.common.getQuote}
           </Link>
           <a
-            href="tel:7373723019"
+            href="tel:7598657990"
             className="flex items-center justify-center w-full sm:w-auto px-8 py-3.5 bg-slate-50 dark:bg-slate-950 hover:bg-slate-100 dark:hover:bg-slate-900 text-slate-700 dark:text-slate-200 text-sm font-bold rounded-xl border border-slate-200 dark:border-slate-850 transition-colors"
           >
             <Phone className="w-4.5 h-4.5 mr-2 text-primary-green" />

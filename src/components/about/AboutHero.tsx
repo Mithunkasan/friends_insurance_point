@@ -3,7 +3,7 @@
 import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import { Phone, Calculator, Heart, Car, ShieldAlert, Plane } from 'lucide-react';
+import { Phone, Calculator } from 'lucide-react';
 import AnimatedReveal from '@/components/shared/AnimatedReveal';
 
 interface AboutHeroProps {
@@ -37,37 +37,56 @@ export default function AboutHero({ lang = 'en' }: AboutHeroProps) {
   const quoteBtnText = isTa ? 'இலவசக் கட்டணக் கோரிக்கை' : 'Get Free Quote';
   const callBtnText = isTa ? 'இப்போது அழைக்கவும்' : 'Call Now';
 
-  // Badges around family
-  const badges = [
-    {
-      label: isTa ? 'சுகாதார காப்பீடு' : 'Health Insurance',
-      sub: 'Health Insurance',
-      icon: <Heart className="w-5 h-5 text-blue-650 dark:text-blue-400" />,
-      posClass: 'top-[12%] -left-8 sm:-left-12 lg:-left-16',
-    },
-    {
-      label: isTa ? 'வாகன காப்பீடு' : 'Vehicle Insurance',
-      sub: 'Vehicle Insurance',
-      icon: <Car className="w-5 h-5 text-blue-650 dark:text-blue-400" />,
-      posClass: 'top-[15%] -right-8 sm:-right-12 lg:-right-16',
-    },
-    {
-      label: isTa ? 'ஆயுள் காப்பீடு' : 'Life Insurance',
-      sub: 'Life Insurance',
-      icon: <ShieldAlert className="w-5 h-5 text-blue-650 dark:text-blue-400" />,
-      posClass: 'bottom-[22%] -left-8 sm:-left-12 lg:-left-16',
-    },
-    {
-      label: isTa ? 'பயண காப்பீடு' : 'Travel Insurance',
-      sub: 'Travel Insurance',
-      icon: <Plane className="w-5 h-5 text-blue-650 dark:text-blue-400" />,
-      posClass: 'bottom-[25%] -right-8 sm:-right-12 lg:-right-16',
-    },
-  ];
-
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-emerald-50/20 via-white to-white dark:from-slate-900/5 dark:via-slate-950 dark:to-slate-950 py-16 lg:py-24 border-b border-slate-100 dark:border-slate-900 transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* Background Images */}
+      <div className="absolute inset-0 select-none pointer-events-none z-0">
+        {/* Large screen, light mode */}
+        <div className="absolute inset-0 opacity-0 lg:opacity-100 dark:lg:opacity-0 transition-opacity duration-700">
+          <Image
+            src="/about.jpeg"
+            alt="About Us Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+        {/* Small screen, light mode */}
+        <div className="absolute inset-0 opacity-100 lg:opacity-0 dark:opacity-0 transition-opacity duration-700">
+          <Image
+            src="/about1.jpeg"
+            alt="About Us Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+        {/* Large screen, dark mode */}
+        <div className="absolute inset-0 opacity-0 dark:lg:opacity-100 transition-opacity duration-700">
+          <Image
+            src="/about2.jpeg"
+            alt="About Us Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+        {/* Small screen, dark mode */}
+        <div className="absolute inset-0 opacity-0 dark:opacity-100 dark:lg:opacity-0 transition-opacity duration-700">
+          <Image
+            src="/about3.jpeg"
+            alt="About Us Background"
+            fill
+            priority
+            className="object-cover object-center"
+          />
+        </div>
+      </div>
+
+      {/* Readability Overlay */}
+      <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40 dark:from-slate-950 dark:via-slate-950/95 dark:to-slate-950/40 lg:from-white lg:via-white/90 lg:to-transparent lg:dark:from-slate-950 lg:dark:via-slate-950/90 lg:dark:to-transparent z-0 transition-colors duration-300" />
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-16 items-center">
           
           {/* Left Column: Text Content */}
@@ -97,57 +116,13 @@ export default function AboutHero({ lang = 'en' }: AboutHeroProps) {
                 {quoteBtnText}
               </Link>
               <a
-                href="tel:7373723019"
+                href="tel:7598657990"
                 className="flex items-center justify-center px-6 py-3.5 bg-white hover:bg-slate-50 dark:bg-slate-900 dark:hover:bg-slate-800 text-blue-650 dark:text-blue-400 text-sm font-bold rounded-xl shadow-sm border border-slate-200 dark:border-slate-800 hover:-translate-y-0.5 transition-all cursor-pointer"
               >
                 <Phone className="w-4.5 h-4.5 mr-2" />
                 {callBtnText}
               </a>
             </AnimatedReveal>
-          </div>
-
-          {/* Right Column: Family Portrait + Floating Badges */}
-          <div className="lg:col-span-6 flex justify-center py-6">
-            <div className="relative w-full max-w-[280px] sm:max-w-[340px] md:max-w-[380px]">
-              
-              {/* Shield Graphic Background Blur */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-emerald-100 to-blue-100 dark:from-emerald-950/20 dark:to-blue-950/20 rounded-full blur-3xl -z-10 opacity-70" />
-              
-              {/* Family Image Frame */}
-              <AnimatedReveal direction="none" delay={0.2} className="relative z-10 flex justify-center">
-                <Image
-                  src="/about-family.png"
-                  alt="Happy Insured Family"
-                  width={400}
-                  height={400}
-                  priority
-                  className="w-full h-auto object-contain select-none filter drop-shadow-[0_12px_24px_rgba(0,0,0,0.06)]"
-                />
-              </AnimatedReveal>
-
-              {/* Floating Badges */}
-              {badges.map((badge, idx) => (
-                <AnimatedReveal
-                  key={idx}
-                  direction="none"
-                  delay={0.3 + 0.1 * idx}
-                  className={`absolute ${badge.posClass} z-20 hidden xs:flex items-center space-x-2.5 bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 p-2.5 px-3.5 rounded-full shadow-[0_8px_30px_rgb(0,0,0,0.04)] select-none hover:scale-105 transition-transform duration-300`}
-                >
-                  <div className="flex items-center justify-center w-8 h-8 rounded-full bg-slate-50 dark:bg-slate-950 shadow-inner shrink-0">
-                    {badge.icon}
-                  </div>
-                  <div className="leading-tight pr-1.5">
-                    <p className="text-[10px] font-extrabold text-slate-800 dark:text-white whitespace-nowrap">
-                      {badge.label}
-                    </p>
-                    <p className="text-[8px] font-bold text-slate-400 uppercase tracking-wider whitespace-nowrap mt-0.5">
-                      {badge.sub}
-                    </p>
-                  </div>
-                </AnimatedReveal>
-              ))}
-
-            </div>
           </div>
 
         </div>
