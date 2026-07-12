@@ -7,6 +7,7 @@ import AboutStory from '@/components/about/AboutStory';
 import AboutWhyChooseUs from '@/components/about/AboutWhyChooseUs';
 import AboutStats from '@/components/about/AboutStats';
 import AboutHowWeWork from '@/components/about/AboutHowWeWork';
+import AboutPromise from '@/components/about/AboutPromise';
 
 export const metadata: Metadata = {
   title: 'About Us | Friends Insurance Point',
@@ -26,6 +27,7 @@ export default async function AboutPage() {
       <AboutWhyChooseUs lang={lang} />
       <AboutStats lang={lang} />
       <AboutHowWeWork lang={lang} />
+      <AboutPromise lang={lang} />
     </div>
   );
 }

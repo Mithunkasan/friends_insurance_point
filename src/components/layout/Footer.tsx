@@ -118,8 +118,8 @@ export default function Footer({ lang = 'en' }: FooterProps) {
               </li>
               <li className="flex items-center">
                 <Phone className="w-5 h-5 mr-3 text-primary-green shrink-0" />
-                <a href="tel:7373723019" className="hover:text-white transition-colors font-bold text-base text-slate-350">
-                  7373723019
+                <a href="tel:7598657990" className="hover:text-white transition-colors font-bold text-base text-slate-350">
+                  7598657990
                 </a>
               </li>
               <li className="flex items-center">
@@ -155,7 +155,7 @@ export default function Footer({ lang = 'en' }: FooterProps) {
               ></iframe>
             </div>
             <a
-              href="https://wa.me/917373723019"
+              href="https://wa.me/917598657990"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center w-full px-4 py-2.5 bg-green-600 hover:bg-green-700 text-white font-bold text-sm rounded-xl transition-all shadow-md transform hover:-translate-y-0.5"

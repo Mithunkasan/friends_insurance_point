@@ -99,14 +99,14 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
             </Link>
 
             {/* Desktop Navigation */}
-            <nav className="hidden lg:flex items-center space-x-8">
+            <nav className="hidden xl:flex items-center space-x-5">
               {navLinks.map((link) => {
                 const isActive = pathname === link.href;
                 return (
                   <Link
                     key={link.name}
                     href={link.href}
-                    className={`relative text-sm font-bold tracking-wide transition-colors py-2 ${
+                    className={`relative text-xs xl:text-sm font-bold tracking-wide transition-colors py-2 ${
                       isActive
                         ? 'text-primary-blue dark:text-primary-blue-light'
                         : 'text-slate-650 dark:text-slate-300 hover:text-primary-blue dark:hover:text-primary-blue-light'
@@ -126,7 +126,7 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
             </nav>
 
             {/* Desktop Controls & CTAs */}
-            <div className="hidden lg:flex items-center space-x-4">
+            <div className="hidden xl:flex items-center space-x-3">
               {/* Language Switcher */}
               <button
                 onClick={toggleLanguage}
@@ -153,15 +153,15 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
               </button>
 
               <a
-                href="tel:7373723019"
-                className="flex items-center text-sm font-bold text-primary-blue dark:text-primary-blue-light hover:bg-primary-blue/5 dark:hover:bg-primary-blue/10 transition-colors px-4 py-2.5 rounded-xl bg-primary-blue-light/50 dark:bg-primary-blue/10 border border-primary-blue/20 dark:border-primary-blue/30"
+                href="tel:7598657990"
+                className="flex items-center text-xs xl:text-sm font-bold text-primary-blue dark:text-primary-blue-light hover:bg-primary-blue/5 dark:hover:bg-primary-blue/10 transition-colors px-3 py-2 xl:px-4 xl:py-2.5 rounded-xl bg-primary-blue-light/50 dark:bg-primary-blue/10 border border-primary-blue/20 dark:border-primary-blue/30"
               >
                 <Phone className="w-4 h-4 mr-2" />
-                7373723019
+                7598657990
               </a>
               <Link
                 href="/quote"
-                className="flex items-center text-sm font-bold text-white bg-gradient-to-r from-primary-blue to-primary-blue-hover px-5 py-2.5 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
+                className="flex items-center text-xs xl:text-sm font-bold text-white bg-gradient-to-r from-primary-blue to-primary-blue-hover px-3 py-2 xl:px-5 xl:py-2.5 rounded-xl shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200"
               >
                 <FileText className="w-4 h-4 mr-2" />
                 {t.common.getQuote}
@@ -169,7 +169,7 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
             </div>
 
             {/* Mobile menu button & Small screen Toggles */}
-            <div className="flex lg:hidden items-center space-x-2">
+            <div className="flex xl:hidden items-center space-x-2">
               {/* Mobile Language Switcher */}
               <button
                 onClick={toggleLanguage}
@@ -206,7 +206,7 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
               animate={{ opacity: 1, height: 'auto' }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.3 }}
-              className="lg:hidden bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900 shadow-xl overflow-hidden"
+              className="xl:hidden bg-white dark:bg-slate-950 border-t border-slate-100 dark:border-slate-900 shadow-xl overflow-hidden"
             >
               <div className="px-4 pt-3 pb-6 space-y-3 sm:px-6">
                 {navLinks.map((link) => {
@@ -229,11 +229,11 @@ export default function Navbar({ lang = 'en' }: NavbarProps) {
 
                 <div className="pt-4 border-t border-slate-100 dark:border-slate-900 flex flex-col sm:flex-row gap-3">
                   <a
-                    href="tel:7373723019"
+                    href="tel:7598657990"
                     className="flex items-center justify-center w-full text-base font-bold text-primary-blue dark:text-primary-blue-light hover:bg-primary-blue/5 transition-colors px-4 py-3 rounded-xl bg-primary-blue-light/50 dark:bg-primary-blue/10 border border-primary-blue/20 dark:border-primary-blue/30"
                   >
                     <Phone className="w-5 h-5 mr-2" />
-                    7373723019
+                    7598657990
                   </a>
                   <Link
                     href="/quote"

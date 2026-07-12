@@ -1,7 +1,7 @@
 'use client';
 
 import React, { useState, useEffect } from 'react';
-import HandshakeLoader from '@/components/shared/HandshakeLoader';
+import LogoLoader from '@/components/shared/LogoLoader';
 
 export default function Loading() {
   const [lang, setLang] = useState('en');
@@ -14,5 +14,5 @@ export default function Loading() {
     }
   }, []);
 
-  return <HandshakeLoader lang={lang} fullscreen />;
+  return <LogoLoader lang={lang} fullscreen />;
 }

@@ -9,7 +9,7 @@ import { getTranslation } from '@/locales/translate';
 export const metadata: Metadata = {
   title: 'Contact Us | Friends Insurance Point',
   description:
-    'Have questions or need a quick insurance quote renewal? Get in touch with Friends Insurance Point in Krishnancoil, Vadasery, Nagercoil. Call 7373723019.',
+    'Have questions or need a quick insurance quote renewal? Get in touch with Friends Insurance Point in Krishnancoil, Vadasery, Nagercoil. Call 7598657990.',
 };
 
 export default async function ContactPage() {
@@ -68,7 +68,7 @@ export default async function ContactPage() {
                 <h4 className="font-extrabold text-slate-900 dark:text-white mb-1">
                   {lang === 'en' ? 'Call Directly' : 'அழைப்பு எண்'}
                 </h4>
-                <p className="font-bold text-base text-slate-800 dark:text-white">+91 7373723019</p>
+                <p className="font-bold text-base text-slate-800 dark:text-white">+91 7598657990</p>
               </div>
             </div>
 

@@ -71,8 +71,8 @@ export default async function PrivacyPolicyPage() {
         </h3>
         <p>
           {isTa 
-            ? 'எங்கள் தனியுரிமைக் கொள்கை பற்றி கூடுதல் கேள்விகள் இருந்தால், எங்களது அலுவலகத்தை நேரில் அல்லது 7373723019 என்ற எண்ணில் தொடர்பு கொள்ளவும்.'
-            : 'If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at our office or call us at 7373723019.'}
+            ? 'எங்கள் தனியுரிமைக் கொள்கை பற்றி கூடுதல் கேள்விகள் இருந்தால், எங்களது அலுவலகத்தை நேரில் அல்லது 7598657990 என்ற எண்ணில் தொடர்பு கொள்ளவும்.'
+            : 'If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us at our office or call us at 7598657990.'}
         </p>
       </AnimatedReveal>
     </div>

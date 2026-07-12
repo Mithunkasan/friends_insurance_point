@@ -173,11 +173,11 @@ export default function Hero({ lang = 'en' }: HeroProps) {
               className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-2"
             >
               <a
-                href="tel:7373723019"
+                href="tel:7598657990"
                 className="flex items-center justify-center w-full sm:w-auto px-8 py-4 bg-primary-green hover:bg-primary-green-hover text-white text-base font-bold rounded-2xl shadow-md hover:shadow-lg transform hover:-translate-y-0.5 transition-all duration-200 shrink-0"
               >
                 <Phone className="w-5 h-5 mr-2" />
-                {t.common.callNow}: 7373723019
+                {t.common.callNow}: 7598657990
               </a>
               <Link
                 href="/quote"

@@ -47,9 +47,9 @@ export default async function NotFound() {
 
       <div className="pt-4 text-xs font-bold text-slate-400 uppercase tracking-widest flex items-center justify-center space-x-2">
         <span>{t.notFound.helpText}</span>
-        <a href="tel:7373723019" className="text-primary-blue dark:text-primary-blue-light hover:text-primary-blue-hover flex items-center">
+        <a href="tel:7598657990" className="text-primary-blue dark:text-primary-blue-light hover:text-primary-blue-hover flex items-center">
           <Phone className="w-3.5 h-3.5 mr-1" />
-          7373723019
+          7598657990
         </a>
       </div>
     </div>

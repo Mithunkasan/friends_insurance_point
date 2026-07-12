@@ -97,7 +97,7 @@ export default async function RootLayout({
         },
         'contactPoint': {
           '@type': 'ContactPoint',
-          'telephone': '+91-7373723019',
+          'telephone': '+91-7598657990',
           'contactType': 'sales and support',
           'areaServed': 'IN',
           'availableLanguage': ['English', 'Tamil'],
@@ -109,7 +109,7 @@ export default async function RootLayout({
         'name': 'Friends Insurance Point',
         'image': 'http://localhost:3000/logo.png',
         'url': 'http://localhost:3000',
-        'telephone': '7373723019',
+        'telephone': '7598657990',
         'priceRange': '$$',
         'address': {
           '@type': 'PostalAddress',
@@ -133,7 +133,7 @@ export default async function RootLayout({
           },
         ],
         'sameAs': [
-          'https://wa.me/917373723019',
+          'https://wa.me/917598657990',
         ],
       },
     ],
