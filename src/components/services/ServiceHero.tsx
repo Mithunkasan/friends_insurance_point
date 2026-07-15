@@ -96,7 +96,7 @@ export default function ServiceHero({ lang = 'en' }: ServiceHeroProps) {
       {/* Readability Overlay */}
       <div className="absolute inset-0 bg-gradient-to-r from-white via-white/95 to-white/40 dark:from-slate-950 dark:via-slate-950/95 dark:to-slate-950/40 lg:from-white lg:via-white/90 lg:to-transparent lg:dark:from-slate-950 lg:dark:via-slate-950/90 lg:dark:to-transparent z-0 transition-colors duration-300" />
 
-      <div className="relative z-10">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
           {/* Left Column: Text Content */}
