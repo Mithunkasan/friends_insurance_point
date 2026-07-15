@@ -2,9 +2,8 @@ import React from 'react';
 import { Metadata } from 'next';
 import { cookies } from 'next/headers';
 import { prisma } from '@/lib/prisma';
-import Accordion from '@/components/ui/Accordion';
-import AnimatedReveal from '@/components/shared/AnimatedReveal';
 import { getTranslation } from '@/locales/translate';
+import FAQClient from '@/components/faq/FAQClient';
 
 export const metadata: Metadata = {
   title: 'Frequently Asked Questions | Friends Insurance Point',
@@ -144,26 +143,12 @@ export default async function FAQPage() {
   };
 
   return (
-    <div className="py-16 sm:py-24 max-w-4xl mx-auto px-4 sm:px-6 space-y-16 bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 animate-fade-in">
+    <div className="bg-white dark:bg-slate-950 text-slate-800 dark:text-slate-100 transition-colors duration-300 animate-fade-in">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
-
-      <AnimatedReveal className="text-center space-y-4 max-w-3xl mx-auto">
-        <h1 className="text-xs uppercase font-extrabold tracking-widest text-primary-blue dark:text-primary-blue-light">{t.faqSection.tag}</h1>
-        <p className="text-4xl sm:text-5xl font-extrabold text-slate-900 dark:text-white tracking-tight">
-          {t.faqSection.title}
-        </p>
-        <p className="text-base sm:text-lg text-slate-500 dark:text-slate-400 font-semibold leading-relaxed">
-          {t.faqSection.description}
-        </p>
-      </AnimatedReveal>
-
-      {/* Accordion Component */}
-      <AnimatedReveal direction="up" className="bg-white dark:bg-slate-900 border border-slate-100 dark:border-slate-800 rounded-3xl p-6 sm:p-8 shadow-soft glass-card">
-        <Accordion items={translatedFaqs} />
-      </AnimatedReveal>
+      <FAQClient faqs={translatedFaqs} lang={lang} />
     </div>
   );
 }
